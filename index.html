@@ -7,13 +7,15 @@
     		<link rel="stylesheet" href="css/main.css">
     		<link rel="stylesheet" href="css/materialize.css">
     		<script src="js/jquery-2.1.4.min.js"></script>
-    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script>/*global WLJQ*/window.$ = window.jQuery = WLJQ;</script>
     	</head>
     	<body>
     	
 	    	<div id="menu-content"></div>
 	    	
 			<script>
+			/*global $*/
+
 				$(document).ready( function() {
 					$("#menu-content").load("views/menu.html");
 				});
